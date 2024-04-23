@@ -1,0 +1,21 @@
+{
+  "name": "blogging",
+  "version": "1.0.0",
+  "description": "Create an array of events in your route handler. This array contains objects that represent an event’s details. Every event has these attributes - id, title, date, category, price,  isRefundable and isDeleted. isDeleted is a boolean value and for active events the value is false. Consider this event is similar to a Bookmyshow event that a user can book for a specific price. The category can be movie, play, standup-show, workshop etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^7.2.1",
+    "nodemon": "^2.0.22"
+  }
+}
