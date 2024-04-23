@@ -94,7 +94,7 @@ const logInAuthor = async function (req, res) {
             const token = jwt.sign({ authorId: author._id.toString() }, "sanket-screte-key");
             res.header("x-api-key",token);//setting token too the response header
 
-            res.status(201).send({ status: true, data: { "token": token } });
+            res.status(201).send({ status: true, "token": token  });
 
         } else {
             return res.status(400).send({ status: false, msg: "invalid request" });
